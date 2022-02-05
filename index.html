@@ -7,18 +7,21 @@
 
   <title>Comunicação: a solução para o negócio</title>
   
-  <!-- CDN's -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
 
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="https://unpkg.com/vue-router@next"></script>
-  <script src="https://unpkg.com/vuex@4"></script>
+  <!-- Vue Libraries -->
+  <script src="https://unpkg.com/vue@3.2.29/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-router@4.0.12/dist/vue-router.global.prod.js"></script>
+  <script src="https://unpkg.com/vuex@4.0.2/dist/vuex.global.prod.js"></script>
   
+  <!-- Icon Provider -->
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
   
-  <!-- Custom Styles -->
+  <!-- Less Css Configuration -->
+  <script>less = { env: "production", async: false, fileAsync: false, poll: 1000, useFileCache: true }</script>
   <link rel="stylesheet/less" type="text/css" href="src/styles/style.less" />
   <script src="https://unpkg.com/less@4.1.1"></script>
 </head>

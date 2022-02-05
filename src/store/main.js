@@ -1,9 +1,4 @@
-import { quizStore } from "./quiz.js"
-
 export const mainStore = Vuex.createStore({
-  modules: {
-    quiz: quizStore
-  },
   state() {
     return {
       posts: [
@@ -39,13 +34,12 @@ export const mainStore = Vuex.createStore({
           description: "Nesse breve podcast vamos dar dicas sobre oratória focado no ambiente de trabalho.",
           content: `
             Nesse breve podcast vamos dar dicas sobre oratória focado no ambiente de trabalho.
-            
           `,
           created_at: "05/02/2022",
         },
         {
           id: "2",
-          title: "Como controlar o nervosismo no momento de se_ comunicar.",
+          title: "Como controlar o nervosismo no momento de se comunicar.",
           description: "Com esse artigo, você vai aprender a como controlar o nervosismo natual que surge na hora de se comunicar para muitas pessoas.",
           created_at: "05/02/2022",
         },
