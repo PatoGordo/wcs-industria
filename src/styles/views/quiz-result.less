@@ -1,0 +1,50 @@
+.quiz-result {
+  .ranking {
+    margin-top: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    .rank {
+      &:first-child {
+        color: #C9B037;
+        &::after {
+          content: '🥇'
+        }
+      }
+      &:nth-child(2) {
+        color: #B4B4B4;
+        &::after {
+          content: '🥈'
+        }
+      }
+      &:nth-child(3) {
+        color: #965A38;
+        &::after {
+          content: '🥉'
+        }
+      }
+    }
+  }
+  
+  input {
+    width: min(420px, 100%);
+    margin-top: 8px;
+    padding: 12px 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+  
+  button {
+    width: min(420px, 100%);
+    border: 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #0080FF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+}
