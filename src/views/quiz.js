@@ -38,7 +38,7 @@ export class Quiz {
         answer: 1
       },
       {
-        question: "Qual a importância da linguagem verbal e não verbal e não verbal no ambiente de trabalho?",
+        question: "Qual a importância da linguagem verbal e não verbal no ambiente de trabalho?",
         options: [
           "Atingir somente conversas de grau elevado.",
           "Assim como acontece na vida pessoal, o ambiente de trabalho exige o desenvolvimento de boas formas de comunicaçao interpessoal.",
