@@ -1,6 +1,6 @@
-export class Navbar {
+export class AppNavbar {
   template = `
-    <nav :style="$route.name === 'home'? 'justify-content: center;' : ''">
+    <nav class="app-navbar" :style="$route.name === 'home'? 'justify-content: center;' : ''">
       <h1 @click="$router.push('/')">
         WCS Indústria
       </h1>

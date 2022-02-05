@@ -1,8 +1,10 @@
-@import "./components/navbar.less";
+@import "./components/app-navbar.less";
+@import "./components/app-footer.less";
+
+@import "./views/quiz-result.less";
 @import "./views/home.less";
 @import "./views/post.less";
 @import "./views/quiz.less";
-@import "./views/quiz-result.less";
 
 * {
   margin: 0;
@@ -24,6 +26,7 @@ body, #app {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 16px;
   h2 {
     font-weight: 500;
     padding-bottom: 16px;

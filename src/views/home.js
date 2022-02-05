@@ -6,7 +6,7 @@ export class Home {
       
       <br />
       
-      <h3>Veja nossos Posts</h3>
+      <h3>Nossos Posts</h3>
       
       <br />
       

@@ -1,12 +1,15 @@
-import { Navbar } from "./components/navbar.js"
+import { AppNavbar } from "./components/app-navbar.js"
+import { AppFooter } from "./components/app-footer.js"
 
 export class App {
   components = {
-    navbar: new Navbar()
+    'app-navbar': new AppNavbar(),
+    'app-footer': new AppFooter()
   }
   
   template = `
-    <navbar />
+    <app-navbar />
     <router-view class="page" />
+    <app-footer />
   `
 }
