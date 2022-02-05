@@ -40,7 +40,7 @@ export class QuizResult {
       try {
         const docRef = await setDoc(doc(db, "ranking", playerName.value), {
           name: playerName.value,
-          score: finalScore
+          score: Number(finalScore)
         }, { marge: true })
         
         window.location.reload()
