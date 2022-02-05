@@ -22,7 +22,7 @@ export class Home {
       <br />
       <br />
       
-      <router-link class="quiz-btn" to="/quiz">Teste seus conhecimentos aqui!</router-link>
+      <router-link class="quiz-btn button-like" to="/quiz">Teste seus conhecimentos aqui!</router-link>
     </div>
   `
 }

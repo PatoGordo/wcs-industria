@@ -95,7 +95,7 @@ export class Quiz {
         <p v-if="question.description">{{ question.description }}</p>
         
         <ul class="questions">
-          <li class="option" :class="currentAnswer === index? 'selected' : ''" v-for="(answer, index) in question.options" :key="index" @click="currentAnswer = index">
+          <li class="option button-like" :class="currentAnswer === index? 'selected' : ''" v-for="(answer, index) in question.options" :key="index" @click="currentAnswer = index">
             {{ answer }}
           </li>
         </ul>

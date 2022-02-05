@@ -9,6 +9,8 @@ export class QuizResult {
     let alreadyHaveAUserName = Vue.ref(false)
     let existentUserScore = Vue.ref("")
     const playerName = Vue.ref(localStorage.getItem("player:name") || "")
+    const isLoading = Vue.ref(false)
+    
     const finalScore = route.params.score
     const questionLength = 5
     
@@ -19,12 +21,15 @@ export class QuizResult {
     })
     
     Vue.onBeforeMount(async () => {
+      isLoading.value = true
       const q = query(collection(db, "ranking"), orderBy("score", "desc"), limit(3))
       const querySnapshot = await getDocs(q)
       
       querySnapshot.forEach((doc) => {
         ranking.value.push(doc.data())
       })
+      
+      isLoading.value = false
       
       if (localStorage.getItem("player:name") !== null) {
         alreadyHaveAUserName.value = true
@@ -46,6 +51,7 @@ export class QuizResult {
     }
     
     return {
+      isLoading,
       alreadyHaveAUserName,
       saveProgress,
       playerName,
@@ -59,7 +65,8 @@ export class QuizResult {
     <div class="quiz-result">
       <h2>Parabéns seu placar final foi de {{ finalScore }} pontos!</h2>
       
-      <h3>Pódio</h3>
+      <h3>Pódio global</h3>
+      <div v-if="isLoading"><br />{{ isLoading? 'Carregando pódio...' : '' }}</div>
       <ol class="ranking">
         <li class="rank" v-for="(rank, index) in ranking" :key="index">
           {{ index + 1 }}° - {{ rank.name }} acertou {{ rank.score }}/{{ questionLength }}!
@@ -68,9 +75,9 @@ export class QuizResult {
       
       <br />
       
-      <input v-if="!alreadyHaveAUserName" v-model="playerName" placeholder="Qual é o seu nome?" />
+      <input v-if="!alreadyHaveAUserName && !isLoading" v-model="playerName" placeholder="Qual é o seu nome?" />
       
-      <button @click="saveProgress" :disabled="!playerName">Salvar meu progrsso no ranking</button>
+      <button v-if="!isLoading" @click="saveProgress" :disabled="!playerName">Salvar meu progrsso no ranking</button>
     </div>
   `
 }

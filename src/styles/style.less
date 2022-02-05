@@ -11,14 +11,28 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body, #app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page {
   padding: 16px;
-  width: 100%;
+  width: min(420px, 100%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   h2 {
     font-weight: 500;
     padding-bottom: 16px;
+  }
+}
+
+button, .button-like {
+  transition: filter .3s;
+  &:hover {
+    filter: brightness(0.8);
   }
 }

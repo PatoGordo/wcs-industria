@@ -26,7 +26,7 @@ export class Post {
       
       <ul class="references">
         <li class="reference" v-for="(reference, index) in post.references" :key="index">
-          <span style="text-transform:uppercase;">{{ reference.title }}</span>. {{ reference.provider }}. Disponível em: &lt;<a :href="reference.url">{{ reference.url }}</a>&gt;. Acesso em: {{ reference.acessed_at }}
+          <span style="text-transform:uppercase;font-weight: 500">{{ reference.title }}</span>. {{ reference.provider }}. Disponível em: &lt;<a :href="reference.url">{{ reference.url }}</a>&gt;. Acesso em: {{ reference.acessed_at }}
         </li>
       </ul>
     </div>
