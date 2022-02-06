@@ -4,14 +4,14 @@ import { db } from "../firebase.js"
 
 export class QuizResult {
   setup() {
-    const route = VueRouter.useRoute()
+    const store = Vuex.useStore()
     
     let alreadyHaveAUserName = Vue.ref(false)
     let existentUserScore = Vue.ref("")
     const playerName = Vue.ref(localStorage.getItem("player:name") || "")
     const isLoading = Vue.ref(false)
     
-    const finalScore = route.params.score
+    const finalScore = store.state.score
     const questionLength = 5
     
     const ranking = Vue.ref([])
@@ -22,7 +22,7 @@ export class QuizResult {
     
     Vue.onBeforeMount(async () => {
       isLoading.value = true
-      const q = query(collection(db, "ranking"), orderBy("score", "desc"), limit(3))
+      const q = query(collection(db, "ranking"), orderBy("score", "desc"), limit(5))
       const querySnapshot = await getDocs(q)
       
       querySnapshot.forEach((doc) => {

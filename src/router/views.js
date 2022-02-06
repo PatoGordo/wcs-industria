@@ -16,7 +16,7 @@ export const views = [
   },
   {
     name: 'quiz-result',
-    path: '/quiz-result/:score',
+    path: '/quiz-result',
     component: new QuizResult()
   },
   {

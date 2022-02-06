@@ -1,6 +1,7 @@
 export const mainStore = Vuex.createStore({
   state() {
     return {
+      score: 0,
       posts: [
         {
           id: "0",
@@ -70,5 +71,9 @@ export const mainStore = Vuex.createStore({
       ]
     }
   },
-  mutations: {}
+  mutations: {
+    incrementScore(state) {
+      state.score++
+    }
+  }
 })

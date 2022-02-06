@@ -1,10 +1,10 @@
 export class Quiz {
   setup() {
     const router = VueRouter.useRouter()
+    const store = Vuex.useStore()
     
     const currentStep = Vue.ref(0)
     const currentAnswer = Vue.ref(null)
-    const score = Vue.ref(0)
     
     const questions = [
       {
@@ -67,7 +67,7 @@ export class Quiz {
       }
       
       if (questions[currentStep.value].answer === currentAnswer.value) {
-        score.value++
+        store.commit('incrementScore')
       }
       
       if (questions.length - 1 !== currentStep.value) {
@@ -75,7 +75,7 @@ export class Quiz {
         currentQuestion.value = [questions[currentStep.value]]
         currentAnswer.value = null
       } else {
-        router.push(`/quiz-result/${score.value}`)
+        router.push(`/quiz-result`)
       }
     }
 
