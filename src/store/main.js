@@ -43,10 +43,10 @@ export const mainStore = Vuex.createStore({
           title: "Como controlar o nervosismo no momento de se comunicar.",
           description: "Com esse artigo, você vai aprender a como controlar o nervosismo natual que surge na hora de se comunicar para muitas pessoas.",
           content: `
-            Com esse artigo, você vai aprender a como controlar o nervosismo natual que surge na hora de se comunicar para muitas pessoas.<br /><br />
-            <iframe class="video" src="https://youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+            Com esse artigo, você vai aprender a como controlar o nervosismo natural que surge na hora de se comunicar para muitas pessoas.<br /><br />
+            <iframe class="video" src="https://youtube.com/embed/hk-R1op7lTA" frameborder="0"></iframe>
           `,
-          created_at: "05/02/2022",
+          created_at: "07/02/2022",
         },
         {
           id: "3",
@@ -56,7 +56,7 @@ export const mainStore = Vuex.createStore({
             Vamos mostrar com um simples vídeo a importância da linguagem verbal e não verbal no ambiente de trabalho, mostrando exemplos e ensinando quando usar cada.<br /><br />
             <iframe class="video" src="https://youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
           `,
-          created_at: "02/02/2022",
+          created_at: "07/02/2022",
         },
         {
           id: "4",
@@ -66,7 +66,7 @@ export const mainStore = Vuex.createStore({
             Aprenda como usar e formular as ordens de serviço, catálogos, manuais de fabricante, relatórios e solicitações de compras.<br /><br />
             
           `,
-          created_at: "05/02/2022",
+          created_at: "08/02/2022",
         }
       ]
     }

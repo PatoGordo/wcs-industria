@@ -2,6 +2,8 @@ import { collection, setDoc, getDocs, doc, query, orderBy, limit, updateDoc } fr
 
 import { db } from "../firebase.js"
 
+import { questions } from "./quiz.js"
+
 export class QuizResult {
   setup() {
     const store = Vuex.useStore()
@@ -12,7 +14,7 @@ export class QuizResult {
     const isLoading = Vue.ref(false)
     
     const finalScore = store.state.score
-    const questionLength = 5
+    const questionLength = questions.length
     
     const ranking = Vue.ref([])
     
