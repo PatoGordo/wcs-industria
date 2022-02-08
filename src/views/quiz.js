@@ -57,9 +57,29 @@ export const questions = [
       "Um papel que vem com instruções de um objeto.",
       "Uma prova.",
       "Recibo de pagamento.",
-      "Oportunidade de emprego.",
+      "Oportunidade de emprego."
     ],
     answer: 0
+  },
+  {
+    question: "Qual é uma das principais formas para controlar o nervosismo na comunicação?",
+    options: [
+      "Pedir ajuda dos amigos.",
+      "Respiração.",
+      "Ir ao medico.",
+      "Tomar um medicamento."
+    ],
+    answer: 1
+  },
+  {
+    question: "Qual é a importancia da postura na hora de se comunicar em público?",
+    options: [
+      "Ficar bonito para o público.",
+      "Mostrar ao público que você tem estilo.",
+      "Mostrar ao público que você tem postura.",
+      "Uma postura correta ajuda as pessoas a se interessarem pelo que você tem a falar."
+    ],
+    answer: 3
   }
 ]
 
