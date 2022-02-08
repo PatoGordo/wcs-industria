@@ -1,3 +1,5 @@
+import { infografico } from "../assets/infografico.js"
+
 export const mainStore = Vuex.createStore({
   state() {
     return {
@@ -64,9 +66,9 @@ export const mainStore = Vuex.createStore({
           description: "Aprenda como usar e formular as ordens de serviço, catálogos, manuais de fabricante, relatórios e solicitações de compras.",
           content: `
             Aprenda como usar e formular as ordens de serviço, catálogos, manuais de fabricante, relatórios e solicitações de compras.<br /><br />
-            
+            ${infografico}
           `,
-          created_at: "08/02/2022",
+          created_at: "07/02/2022",
         }
       ]
     }
