@@ -56,7 +56,7 @@ export const mainStore = Vuex.createStore({
           description: "Vamos mostrar com um simples vídeo a importância da linguagem verbal e não verbal no ambiente de trabalho, mostrando exemplos e ensinando quando usar cada.",
           content: `
             Vamos mostrar com um simples vídeo a importância da linguagem verbal e não verbal no ambiente de trabalho, mostrando exemplos e ensinando quando usar cada.<br /><br />
-            <iframe class="video" src="https://youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+            <iframe class="video" src="https://youtube.com/embed/RBHrv8X9AH0" frameborder="0"></iframe>
           `,
           created_at: "07/02/2022",
         },
