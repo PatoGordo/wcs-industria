@@ -8,37 +8,38 @@ export const mainStore = Vuex.createStore({
         {
           id: "0",
           title: "Entenda a importância das Soft Skills.",
-          description: "Soft skills é um termo em inglês usado por profissionais de recursos humanos para definir habilidades comportamentais, competências subjetivas difíceis de avaliar. Também são conhecidas como people skills (habilidades com pessoas) e interpersonal skills (habilidades interpessoais).",
+          description: "As definições de \"soft skills\" e \"hard skills\" podem variar de acordo com a cultura e o idioma, mas em geral, \"soft skills\" são habilidades não acadêmicas, como comunicação, liderança, resolução de problemas e tomada de decisão, enquanto \"hard skills\" são habilidades acadêmicas, como conhecimento específico de uma área de estudo.",
           content: `
-            Soft skills é um termo em inglês usado por profissionais de recursos humanos para definir habilidades comportamentais, competências subjetivas difíceis de avaliar. Também são conhecidas como people skills (habilidades com pessoas) e interpersonal skills (habilidades interpessoais).<br/><br/>
-            São normalmente analisadas junto com as hard skills (habilidades técnicas) na seleção e contratação de profissionais pelos departamentos de RH.<br/><br/>
+            As definições de "soft skills" e "hard skills" podem variar de acordo com a cultura e o idioma, mas em geral, "soft skills" são habilidades não acadêmicas, como comunicação, liderança, resolução de problemas e tomada de decisão, enquanto "hard skills" são habilidades acadêmicas, como conhecimento específico de uma área de estudo.<br /><br />
+            No Brasil, "soft skills" são consideradas habilidades essenciais para o sucesso na vida profissional, pois são habilidades que não podem ser aprendidas em sala de aula. "Hard skills" são importantes, mas não tão cruciais quanto "soft skills".<br /><br />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_HxCdBCCYLgkoxYEGKuPdhjt5VlBCeb2OQ&usqp=CAU"><br/><br/>
-            Podemos citar alguns exemplos de soft skills: Criatividade, Persuasão, Colaboração, Adaptabilidade e Inteligência Emocional. Essas 5 aparecem no topo das mais procuradas segundo o linkedin em uma pesquisa realizada no ano de 2020. Criatividade e Adaptabilidade são importantes nos dias de hoje pois vivemos num período de mudanças, de muita informação e, principalmente Inteligência Artificial.<br/><br/>
+            As empresas buscam cada vez mais profissionais com habilidades socioemocionais. Isso porque essas competências são cruciais para o sucesso na gestão de pessoas e na construção de relacionamentos.<br /><br />
+            A capacidade de se comunicar bem, de lidar com conflitos, de trabalhar em equipe e de ter iniciativa são algumas das principais características de um profissional com habilidades socioemocionais.<br /><br />
+            Essas habilidades não podem ser aprendidas em sala de aula. Elas são frutos da experiência e da interação com outras pessoas. Por isso, é importante que os profissionais busquem o desenvolvimento dessas competências ao longo da vida.<br /><br />
+            As habilidades socioemocionais são fundamentais para o sucesso na carreira. Elas ajudam a construir relacionamentos saudáveis e a gerir pessoas de forma eficiente. Por isso, é importante que os profissionais busquem o desenvolvimento dessas competências ao longo da vida.<br /><br />
           `,
           references: [
             {
               title: "Soft Skills e Hard Skills – você precisa definir as suas!",
               provider: "Innovare Jr",
               url: "https://innovarejr.com.br/2020/09/01/soft-skills-e-hard-skills-voce-precisa-definir-as-suas/",
-              acessed_at: "05/02/2022"
+              accessed_at: "05/02/2022"
             },
-            {
-              title: "Soft skills",
-              provider: "Wikipedia",
-              url: "https://pt.m.wikipedia.org/wiki/Soft_skills",
-              acessed_at: "05/02/2022"
-            }
           ],
           created_at: "05/02/2022",
         },
         {
           id: "1",
           title: "Dicas para Apresentação em Público.",
-          description: "Nesse breve podcast vamos dar dicas sobre oratória focado no ambiente de trabalho.",
+          description: "Nesse breve podcast vamos dar dicas sobre como melhorar a sua oratória.",
           content: `
-            Nesse breve podcast vamos dar dicas sobre oratória focado no ambiente de trabalho.
+            Nesse breve podcast vamos dar dicas sobre como melhorar a sua oratória.<br /><br />
+            <audio class="audio" id="podcast-player" controls autoplay>
+              <source id="mp3_src" src="src/assets/podcast.mp3" type="audio/mp3">
+              Seu navegador não suporta audios!
+            </audio>
           `,
-          created_at: "05/02/2022",
+          created_at: "08/02/2022",
         },
         {
           id: "2",
