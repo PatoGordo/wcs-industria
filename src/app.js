@@ -10,6 +10,6 @@ export class App {
   template = `
     <app-navbar />
     <router-view class="page" />
-    <app-footer />
+    <!-- app-footer -->
   `
 }
